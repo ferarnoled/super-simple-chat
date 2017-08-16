@@ -10,8 +10,6 @@
   const port = normalizePort(process.env.PORT || '4000');
   app.set('port', port);
 
-  app.use(express.static(path.resolve(__dirname, './src/views')));
-  
   let server;
   /*
   if (app.get('env') === 'development')
