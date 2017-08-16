@@ -16,7 +16,9 @@
     server = http.createServer(app);
   else
     */
-  server = http.createServer(options, app);
+  var options = {};
+
+  server = http.createServer(app);
 
   server.listen(port);
 
