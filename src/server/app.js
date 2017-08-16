@@ -9,7 +9,9 @@
   // *** express instance *** //
   const app = express();
 
-  app.use(express.static(path.resolve(__dirname, './src/views')));
+  console.log(path.resolve(__dirname, '../views'));
+  app.use("/chat", express.static(path.resolve(__dirname, '../views')));
+  //app.use(express.static('public'));
   
   module.exports = app;
 
